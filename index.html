@@ -12,13 +12,54 @@
     <header>
         <h1>Burger House</h1>
     </header>
-    <main>
-        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80"
-            alt="Burger" class="burger-img">
-        <h2>Bizning maxsus burgerlarimiz!</h2>
-        <p>Yangi, mazali va issiq burgerlar faqat bizda!</p>
-        <button>Buyurtma berish</button>
-    </main>
+    <!-- ...existing code... -->
+
+    <body>
+        <header>
+            <h1>Burger House</h1>
+            <nav>
+                <a href="#">Bosh sahifa</a>
+                <a href="#">Menyu</a>
+                <a href="#">Aloqa</a>
+            </nav>
+        </header>
+        <main>
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80"
+                alt="Burger" class="burger-img">
+            <h2>Bizning maxsus burgerlarimiz!</h2>
+            <div class="burgers">
+                <div class="burger-card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=200&q=80"
+                        alt="Cheese Burger">
+                    <h3>Cheese Burger</h3>
+                    <p>Mol go‘shti, pishloq, pomidor, salat.</p>
+                </div>
+                <div class="burger-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=200&q=80"
+                        alt="Chicken Burger">
+                    <h3>Chicken Burger</h3>
+                    <p>Tovuq go‘shti, salat, sous, bodring.</p>
+                </div>
+            </div>
+            <p>Yangi, mazali va issiq burgerlar faqat bizda!</p>
+            <button>Buyurtma berish</button>
+            <form class="contact-form">
+                <h3>Aloqa uchun</h3>
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Xabaringiz"></textarea>
+                <button type="submit">Yuborish</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2025 Burger House</p>
+            <div>
+                <a href="#">Instagram</a> |
+                <a href="#">Telegram</a>
+            </div>
+        </footer>
+    </body>
+    <!-- ...existing code... -->
 </body>
 
 </html>
