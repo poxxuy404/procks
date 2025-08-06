@@ -231,6 +231,66 @@ footer a:hover {
     animation-duration: 21s;
 }
 
+/* --- Animated background bubbles --- */
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.25;
+    animation: float 16s linear infinite;
+    background: radial-gradient(circle at 30% 30%, #ff9800 60%, #fffde7 100%);
+}
+
+.bubble:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    left: 10vw;
+    top: 70vh;
+    animation-duration: 18s;
+}
+
+.bubble:nth-child(2) {
+    width: 90px;
+    height: 90px;
+    left: 80vw;
+    top: 80vh;
+    animation-duration: 22s;
+}
+
+.bubble:nth-child(3) {
+    width: 160px;
+    height: 160px;
+    left: 60vw;
+    top: 10vh;
+    animation-duration: 25s;
+}
+
+.bubble:nth-child(4) {
+    width: 70px;
+    height: 70px;
+    left: 30vw;
+    top: 20vh;
+    animation-duration: 19s;
+}
+
+.bubble:nth-child(5) {
+    width: 100px;
+    height: 100px;
+    left: 75vw;
+    top: 50vh;
+    animation-duration: 21s;
+}
+
 @keyframes float {
     0% {
         transform: translateY(0) scale(1);
@@ -242,5 +302,19 @@ footer a:hover {
 
     100% {
         transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(5);
+    }
+
+    50% {
+        transform: translateY(-60px) scale(1.7);
+    }
+
+    100% {
+        transform: translateY(0) scale(3);
     }
 }
